@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "deadinside";
+  src: url(".ttf");
+}
+
+#BGID {
+  min-height: 100%;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+marquee {
+  color: white;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: gray;
+}
+
+body {
+  background-color: black;
+}
+
+.nice-button {
+  background-color: #1c1c1c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 40px;
+}
+
+.tab {
+  justify-content: space-around;
+  display: flex;
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: #1c1c1c;
+}
+
+.tab button {
+  width: 25%;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 40px;
+}
+
+.tab button:hover {
+  background-color: #181c1f;
+  color: white;
+}
+
+.tab button:active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.LetMeDie {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.LetMeDie button {
+  border: 1px solid black;
+  height: 100px;
+  width: 300px;
+  padding: 14px 16px;
+}
+
+.LetMeDie button:hover {
+  background-color: #181c1f;
+  color: white;
+}
+
+.LetMeDie button:active {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.audio-container {
+  width: 400px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.audio-container * {
+  width: 100%;
+}
+
+nav {
+  margin-left: auto;
+  margin-top: 10px;
+  width: 180px;
+  background-color: #1c1c1c;
+}
+
+nav>button, nav li {
+  border: 1px solid black !important;
+  display: block !important;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+nav button:active {
+  background-color: #4CAF50 !important;
+}
+
+nav button:hover {
+  background-color: #181c1f;
+  color: #fff;
+}
+
+nav ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
+}
+
+nav ul li {
+  display: inline-block;
+  background-color: #1c1c1c;
+  display: block;
+  width: 100%;
+}
+
+nav ul button {
+  width: 100%;
+}
+
+nav:hover ul {
+  max-height: 150px;
+  color: #fff !important;
+}
+
+nav button {
+  padding: 10px 20px;
+}
