@@ -5,7 +5,7 @@ const MarqueeSongs = document.querySelector('#marqueesongs');
 let SongID = 1;
 let PicID = 1;
 let count = 1000;
-let AnimationIsPlaying = false
+let AnimationIsPlaying = false;
 
 const SongArr = ["Benedixhion - Toxin", "fem.love — Позвони", "fem.love — 1000-7",
   "fem.love — Меня не существует", "fem.love — Разбитые сердца", "fem.love — Фотографирую закат",
@@ -49,7 +49,7 @@ function AlreadyDead() {
   } else {
     ButtonElem.style.opacity = 0.3;
     document.querySelector(`#tab`).style.opacity = 0.3;
-    document.querySelector(`#Volume`).style.opacity = 0.3;
+    document.querySelector(`#volume`).style.opacity = 0.3;
     count = -1;
     TakeAPic();
   }
