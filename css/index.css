@@ -14,6 +14,26 @@
   z-index: -1;
 }
 
+a {
+  border: 1px solid black;
+  height: 100px;
+  width: 300px;
+  padding: 14px 16px;
+  background-color: #1c1c1c;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 40px;
+  justify-content: space-around;
+  display: flex;
+  overflow: hidden;
+}
+
+a :hover {
+  background-color: #181c1f;
+  color: white;
+}
+
 marquee {
   color: white;
 }

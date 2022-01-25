@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <img id="BGID" src="pictures/main.jpg" />
+
+  <div class="tab" id="tab">
+    <button class="nice-button" onclick="window.location.href = 'index.html'">Main</button>
+    <button class="nice-button" onclick="playerControl()">I'm Dead</button>
+    <button class="nice-button" onclick="TakeASong()">Dead</button>
+    <button class="nice-button" onclick="TakeAPic()">Inside</button>
+  </div>
+
+  <nav id="volume">
+    <button class="nice-button" onclick="playerControl()">Volume</button>
+        <ul>
+          <li><button class="nice-button" onclick="document.getElementById('player').volume+=0.1">+</button></li>
+          <li><button class="nice-button" onclick="document.getElementById('player').volume-=0.1">-</button></li>
+        </ul>
+  </nav>
+
+  <div class="LetMeDie">
+    <button id="Btn1000-7" class="nice-button" onclick="Timer()">1000-7</button>
+  </div>
+
+  <div class="audio-container">
+    <marquee id="marqueesongs" loop>Benedixhion - Toxin.mp3</marquee>
+    <audio controls id="player" loop>
+      <source id="songs" src="songs/1.mp3" type="audio/mp3" loop>
+    </audio>
+  </div>
+
+  <script src="../scripts/index.js"></script>
+
+</body>
+
+</html>
